@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400&display=swap" rel="stylesheet">
+
+    <title>Account-in-Order</title>
+</head>
+<body>
+    <main>
+    <section id="painel">
+            <section id="logo">
+                <img src="assets/fotos/ChatGPT Image 3 de mai. de 2025, 13_51_30.png" alt="logo">
+                <div class="name">
+                    <h1>Account</h1>
+                    <h2>In</h2>
+                    <h1>Order</h1>
+                </div>
+            </section>
+</section>
+<hr>
+    
+<main> 
+
+    <section class="entrada">
+
+    <div class="bar-account">
+        <form onsubmit="return false;">
+            <button class="adicionar" type="button" onclick="exibirConta()">Adicionar</button>
+            <textarea id="accountInput" placeholder="Digite sua conta aqui..."></textarea>
+        </form>
+    </div>
+
+    <div class="bar-bravery">
+        <form onsubmit="return false;">
+            <textarea id="braveryInput" placeholder="valor..." oninput="this.value = this.value.replace(/[^0-9]/g, '')"></textarea>
+        </form>
+    </div>
+
+    </section>
+
+    <section class="accounts-panel">
+            
+        <div class="account-box">
+            <H3>Contas</H3>
+
+            <div id="accountList" ></div>
+        </div> 
+
+        <div class="bravery-box">
+            <h3>Valor</h3>
+            
+            <div id="braveryList"></div>
+
+
+    </div>
+    </section>
+
+    <section class="total">
+
+        <div class="texto">
+            <h3>Soma total</h3>
+         </div>
+        
+        <div class="soma">
+            <h3 id="total">Total: R$ 0.00</h3>
+        </div>
+    </section>
+
+
+
+</main>
+        <script src="index.js"></script>
+</body>
+</html>

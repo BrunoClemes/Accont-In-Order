@@ -1,0 +1,283 @@
+body {
+    margin: 30px;
+    align-items: center;
+    background: url('https://www.transparenttextures.com/patterns/paper.png');
+    background-color: #949090;
+    height: 105vh; 
+
+}
+
+#painel{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+
+#logo{
+    display: flex;
+    flex-direction:row;
+    align-items: center; 
+    margin-left: 30%;
+
+}
+
+#logo img{
+    width: 30%;
+    margin-top: -20px;
+}
+
+hr{
+    border-color:#00A58A;
+}
+
+#logo h1{
+    margin-top: -10px;
+    font-size: 5vh;
+    margin-bottom: 2px;
+    font-family: 'Courier New', Courier, monospace;
+    color: aliceblue;
+}
+
+#logo h2{
+    color: aliceblue;
+    margin-top: 0%;
+    margin-bottom: 10px;
+    font-size: 3vh;
+    background-color: #00A58A;
+    margin-left: 10vh;
+    width: 10vh;
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.entrada{
+align-items: center;
+display: flex;
+flex-direction: row;
+gap: 23px;
+
+}
+
+
+button {
+	box-shadow: 0px 0px 0px 2px #0f0f0f;
+	background:linear-gradient(to bottom, #00A58A 5%, #00555B 100%);
+	background-color:#f7fffe;
+	border-radius:10px;
+	border:1px solid #4e6096;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Trebuchet MS;
+	font-size:15px;
+	padding:12px 37px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #f0f4ff;
+}
+button:hover {
+	background:linear-gradient(to bottom, #f1f1f1 5%, #00A58A 100%);
+	background-color:#00555B;
+}
+button:active {
+	position:relative;
+	top:1px;
+}
+
+form{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    text-align: center;
+    gap: 10px;
+    margin-top: 30px;
+}
+
+form #accountInput{
+    width: 30vh;
+    height: 3vh;
+    border-radius: 20px;
+    text-align: center;
+    align-items: center;
+    font-size: 15px;
+    border:solid 3px  #00A58A;
+    
+
+}
+
+form #braveryInput{
+    width: 15vh;
+    height: 3vh;
+    border-radius: 15px;
+    text-align: center;
+    align-items: center;
+    font-size: 15px;
+    border:solid 3px  #00A58A;
+
+}
+
+.accounts-panel{
+    margin-top: 10px;
+    border:solid 3px  #00A58A;
+    background-color: #f1f1f1;
+    width: 89vh;
+    height: 60vh;
+    display: flex;
+    flex-direction: row;
+    
+    
+
+}
+
+.account-box {
+    border: solid 1px #00A58A;
+    min-height: 3vh;
+    min-width: 70vh;
+    font-size: 22px;
+    text-align: center;
+    margin-right: 10px;
+    
+}
+
+.account-box h3{
+    border: solid 1px #00A58A;
+    margin-top: 0%;
+    background-color: #00A58A;
+    color: #f1f1f1;
+    
+}
+
+.bravery-box {
+    border: solid 1px #00A58A;
+    min-height: 3vh; 
+    min-width: 18vh;
+    font-size: 22px;
+    text-align: center;
+   
+}
+.bravery-box h3{   
+    border: solid 1px #00A58A;
+    margin-top: 0%;
+    background-color: #00A58A;
+    color: #f1f1f1;
+   
+}
+
+.total{
+    display: flex;
+    flex-direction: row;
+    background-color: #f0f4ff;
+    width: 89vh;
+    border: solid 3px #00A58A;
+    
+    
+
+    
+}
+
+.total .texto{
+    border: solid 1px #00A58A;
+    min-height: 3vh;
+    min-width: 70vh;
+    font-size: 22px;
+    text-align: center;
+    margin-right: 10px;
+    background-color: #00A58A;
+    color: #f0f4ff;
+}
+
+.total .soma {
+    border: solid 1px #00A58A;
+    min-height: 3vh; 
+    min-width: 18vh;
+    font-size: 22px;
+    text-align: center;
+    background-color: #00A58A;
+    color: #f0f4ff;
+}
+
+
+
+@media screen and (max-width: 600px) {
+
+    
+    #logo img{
+        width: 100%;
+     
+    }
+
+    hr{
+        width: 87vh;
+    }
+
+    .entrada{
+        gap: 20px;
+        
+    }
+    
+    button {
+        padding:20px 50px;
+    }
+
+    form{
+        margin-top: 25px;
+    }
+
+    .accounts-panel{
+        width: 80vh;
+        height: 60vh;
+        
+    
+    }
+
+    .account-box {
+        min-height: 4vh;
+        min-width: 67vh;
+        font-size: 25px;
+        margin-right: 0px;
+        
+    }
+
+    .account-box h3{
+        font-size: 29px;
+    }
+    
+    .bravery-box {
+        border: solid 1px #00A58A;
+        min-height: 4vh; 
+        min-width: 13vh;
+        font-size: 25px;
+        margin-right: 0px;
+    }
+    .total{
+        display: flex;
+        flex-direction: row;
+        background-color: #f0f4ff;
+        width: 80vh;
+        border: solid 3px #00A58A;
+        }
+
+    .total .texto{
+        border: solid 1px #00A58A;
+        font-size: 22px;
+        height: 11vh;
+        width: 20px;
+        text-align: center;
+        margin-right: -50px;
+        background-color: #00A58A;
+    }
+
+    .total .soma {
+        border: solid 1px #00A58A;
+        min-height: 3vh; 
+        min-width: 2vh;
+        font-size: 20px;
+        text-align: center;
+        background-color: #00A58A;
+    }
+
+    
+
+
+
+}
