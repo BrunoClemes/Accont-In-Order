@@ -32,10 +32,10 @@ function exibirConta() {
     document.getElementById("total").textContent = "Total: R$ " + soma.toFixed(2).replace('.', ',');
 }
 
-// Calculadora
+
 let display = document.getElementById('display');
 
-// Garante que o display funcione como uma string para digitar
+
 display.value = "0";
 
 function adicionar(valor) {
