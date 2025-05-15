@@ -9,7 +9,6 @@
     <title>Account-in-Order</title>
 </head>
 <body>
-    <main>
     <section id="painel">
             <section id="logo">
                 <img src="assets/fotos/ChatGPT Image 3 de mai. de 2025, 13_51_30.png" alt="logo">
@@ -22,54 +21,123 @@
 </section>
 <hr>
     
-<main> 
-
-    <section class="entrada">
-
-    <div class="bar-account">
-        <form onsubmit="return false;">
-            <button class="adicionar" type="button" onclick="exibirConta()">Adicionar</button>
-            <textarea id="accountInput" placeholder="Digite sua conta aqui..."></textarea>
-        </form>
-    </div>
-
-    <div class="bar-bravery">
-        <form onsubmit="return false;">
-            <textarea id="braveryInput" placeholder="valor..." oninput="this.value = this.value.replace(/[^0-9]/g, '')"></textarea>
-        </form>
-    </div>
-
-    </section>
-
-    <section class="accounts-panel">
-            
-        <div class="account-box">
-            <H3>Contas</H3>
-
-            <div id="accountList" ></div>
-        </div> 
-
-        <div class="bravery-box">
-            <h3>Valor</h3>
-            
-            <div id="braveryList"></div>
+<main>
+    
+        <Section class="account">
 
 
-    </div>
-    </section>
+        <section class="entrada">
 
-    <section class="total">
-
-        <div class="texto">
-            <h3>Soma total</h3>
-         </div>
-        
-        <div class="soma">
-            <h3 id="total">Total: R$ 0.00</h3>
+        <div class="bar-account">
+            <form onsubmit="return false;">
+                <button class="adicionar" type="button" onclick="exibirConta()">Adicionar</button>
+                <textarea id="accountInput" placeholder="Digite sua conta aqui..."></textarea>
+            </form>
         </div>
+
+        <div class="bar-bravery">
+            <form onsubmit="return false;">
+                <textarea id="braveryInput" placeholder="valor..." oninput="this.value = this.value.replace(/[^0-9,]/g, '')"></textarea>
+            </form>
+        </div>
+
+        </section>
+
+        <section class="accounts-panel">
+                
+            <div class="account-box">
+                <H3>Contas</H3>
+
+                <div id="accountList" ></div>
+            </div> 
+
+            <div class="bravery-box">
+                <h3>Valor</h3>
+                
+                <div id="braveryList"></div>
+
+            </div>
+        
+        </section>
+
+        <section class="total">
+
+            <div class="texto">
+                <h3>Soma total</h3>
+            </div>
+            
+            <div class="soma">
+                <h3 id="total">Total: R$ 0.00</h3>
+            </div>
+        </section>
+    </Section>
+
+    <section class="calculator">
+        <div class="texto">
+            <h2>Calculadora</h2>
+        </div>
+        
+        <div class="calculator-box">
+            <div class="display">
+              <input type="text" id="display" name="numero" />
+            </div>
+        <hr> 
+        
+        <section class="teclas">
+
+            <row>
+
+                <button onclick="limpar()" class="limpar">C</button>
+                <button id="c">C</button>
+                <button id="%">%</button>
+                 <button onclick="adicionar('/')">/</button>
+                
+            </row>
+
+            <row>
+                
+                <button onclick="adicionar('7')">7</button>
+                 <button onclick="adicionar('8')">8</button>
+               <button onclick="adicionar('9')">9</button>
+                <button onclick="adicionar('*')">X</button>
+                
+            </row>
+
+            <row>
+                
+                <button onclick="adicionar('4')">4</button>
+                <button onclick="adicionar('5')">5</button>
+                 <button onclick="adicionar('6')">6</button>
+                <button onclick="adicionar('-')">-</button>
+                
+            </row>
+
+            <row>  
+                 <button onclick="adicionar('1')">1</button>
+                <button onclick="adicionar('2')">2</button>
+              <button onclick="adicionar('3')">3</button>
+                 <button onclick="adicionar('+')">+</button>
+                
+            </row>
+
+            <row>
+
+                <div class="buttons">  
+                <button onclick="adicionar('0')">0</button>
+                <button onclick="adicionar('00')">00</button>
+                <button onclick="adicionar('.')">.</button>
+                <button onclick="calcular()" class="igual">=</button>
+                
+            </row>
+
+        </section>
+
+
+    
+
+        </div>
+
     </section>
-
-
 
 </main>
         <script src="index.js"></script>

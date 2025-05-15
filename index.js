@@ -2,6 +2,8 @@ function exibirConta() {
     const conta = document.getElementById("accountInput").value;
     const valor = document.getElementById("braveryInput").value;
 
+    if (!conta || !valor) return;
+
     const contaDiv = document.createElement("div");
     const valorDiv = document.createElement("div");
 
@@ -17,16 +19,41 @@ function exibirConta() {
     document.getElementById("accountInput").value = ''; 
     document.getElementById("braveryInput").value = ''; 
 
-
-
     const valores = document.querySelectorAll("#braveryList .bravery-box");
     let soma = 0;
 
-    valores.forEach(item =>{
-        const numero = parseFloat(item.textContent);
-        if(!isNaN(numero)) {
-            soma+=numero;
+    valores.forEach(item => {
+        const numero = parseFloat(item.textContent.replace(',', '.'));
+        if (!isNaN(numero)) {
+            soma += numero;
         }
     });
-    document.getElementById("total").textContent = "Total: R$ " + soma.toFixed(2);
+
+    document.getElementById("total").textContent = "Total: R$ " + soma.toFixed(2).replace('.', ',');
+}
+
+// Calculadora
+let display = document.getElementById('display');
+
+// Garante que o display funcione como uma string para digitar
+display.value = "0";
+
+function adicionar(valor) {
+    if (display.value === "0" || display.value === "Erro") {
+        display.value = valor;
+    } else {
+        display.value += valor;
+    }
+}
+
+function limpar() {
+    display.value = "0";
+}
+
+function calcular() {
+    try {
+        display.value = eval(display.value);
+    } catch {
+        display.value = "Erro";
+    }
 }

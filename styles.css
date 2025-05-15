@@ -3,10 +3,16 @@ body {
     align-items: center;
     background: url('https://www.transparenttextures.com/patterns/paper.png');
     background-color: #949090;
-    height: 105vh; 
+   
 
 }
 
+main{
+    margin-top: -10px;
+    display: flex;
+    gap: 25vh;
+
+}
 #painel{
     display: flex;
     flex-direction: row;
@@ -60,7 +66,7 @@ gap: 23px;
 }
 
 
-button {
+.bar-account button {
 	box-shadow: 0px 0px 0px 2px #0f0f0f;
 	background:linear-gradient(to bottom, #00A58A 5%, #00555B 100%);
 	background-color:#f7fffe;
@@ -119,7 +125,7 @@ form #braveryInput{
 .accounts-panel{
     margin-top: 10px;
     border:solid 3px  #00A58A;
-    background-color: #f1f1f1;
+    background-color: #949090;
     width: 89vh;
     height: 60vh;
     display: flex;
@@ -196,6 +202,75 @@ form #braveryInput{
     color: #f0f4ff;
 }
 
+.calculator .texto{
+    background-color: #00A58A;
+    width: 50vh;
+    height: 4vh;
+     text-align: center;
+     margin-top: 5px;
+     color: #f1f1f1;
+     margin-top: 7vh;
+     border: solid 1px #00A58A;
+}
+
+.calculator-box{
+    background-color: #00A58A;
+    width: 50vh;
+    height: 55vh;
+   border: solid 1px #00A58A;
+   display: flex;
+   flex-direction: column;
+   align-items:center;
+
+}
+
+#display{
+    background-color: #c4bebe;
+    width: 40vh;
+    height: 7vh;
+    margin: 10px;
+    font-size: 50px;
+}
+
+.calculator hr{
+        width: 35vh;
+
+}
+
+.teclas{
+    background-color: #949090;
+    width: 40vh;
+    height: 40vh;
+    display: flex;
+    flex-direction: column;
+    margin-top: 30px;
+    align-items: center;
+    text-align: center;
+    
+
+  
+}
+
+.teclas button{
+    align-items: center;
+    width: 8vh;
+    height: 6vh;
+    margin: 5px;
+    margin-top: 13px;
+    align-items: center;
+    text-align: center;
+    font-size: 30px;
+    border-radius: 20%;
+    
+}
+
+button {
+    background-color: #00A58A;
+    color: #f0f4ff;
+}
+
+
+
 
 
 @media screen and (max-width: 600px) {
@@ -260,7 +335,7 @@ form #braveryInput{
     .total .texto{
         border: solid 1px #00A58A;
         font-size: 22px;
-        height: 11vh;
+        height: 13vh;
         width: 20px;
         text-align: center;
         margin-right: -50px;
