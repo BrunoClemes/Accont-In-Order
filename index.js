@@ -29,7 +29,7 @@ function exibirConta() {
         }
     });
 
-    document.getElementById("total").textContent = "Total: R$ " + soma.toFixed(2).replace('.', ',');
+    document.getElementById("total").textContent = "R$ " + soma.toFixed(2).replace('.', ',');
 }
 
 
