@@ -10,12 +10,12 @@ body {
 main{
     display: flex;
      gap: 16rem;
-
 }
-#painel{
-    display: flex;
-    flex-direction: row;
-    align-items: center;
+
+    #painel{
+     display: flex;
+        flex-direction: row;
+        align-items: center;
     
 }
 
@@ -24,8 +24,6 @@ main{
     flex-direction:row;
     align-items: center; 
      padding-left: 35%;
-    
-
 }
 
 #logo img{
@@ -150,6 +148,7 @@ form #braveryInput{
     font-size: 22px;
     text-align: center;
     margin-right: 10px;
+    color: #f0f4ff;
     
 }
 
@@ -164,11 +163,15 @@ form #braveryInput{
 .bravery-box {
     border: solid 1px #00A58A;
     min-height: 1.875rem; 
-    min-width: 169px;
+    min-width: 167px;
     font-size: 22px;
     text-align: center;
+    color: #f0f4ff;
+    
    
 }
+
+
 .bravery-box h3{   
     margin-top: 0%;
     background-color: #00A58A;
@@ -275,25 +278,33 @@ button {
 
 @media screen and (max-width: 600px) {
 
+    body {
+    margin: 0px;
+    display: flex;
+    flex-direction: column;
+
+}
     main{
     display: flex;
     flex-direction: column;
-    gap: 0vh;
-    text-align: center;
-    
 }
     
+ 
     #logo img{
         width: 100%;
      
-    }
-
+}
     hr{
         width: 54.375rem;
-    }
+}
 
     .entrada{
-        gap: 20px;
+        display: flex;
+        flex-direction: column;
+        gap: 0px;
+        align-items: center;
+        margin-left: 50px;
+        margin-top: 25px;
         
     }
     
@@ -328,7 +339,6 @@ button {
     
     .bravery-box {
         border: solid 1px #00A58A;
-        
         min-width: 8.125rem;
         font-size: 25px;
         margin-right: 0px;
@@ -354,20 +364,16 @@ button {
         text-align: center;
     }
 
-    .calculator h2{
-        background-color: #00A58A;
-        color: #f1f1f1;
-        margin-top: 3.125rem;
-        border: solid 1px #00A58A;
-         width: 50rem;
-         
-    }
+ .calculator h2{
+     text-align: center;
+     color: #f1f1f1;
+}
+
 
     .calculator-box{
-        margin-left: 3%;
         display: flex;
         flex-direction: column;
-        width: 50rem;
+        width: 36rem;
          height: 45.625rem;
         border: solid 1px #00A58A;
         display: flex;
@@ -377,21 +383,18 @@ button {
            display: flex;
         flex-direction: column;
         align-items: center;
+        margin-left: 44%;
+        margin-bottom: 100px;
 
 }   
 
     .teclas{
     background-color: #949090;
-    width: 43.75rem;
-    height: 27.5rem;
+    width: 30.75rem;
     display: flex;
     flex-direction: column;
-
-    
-    
-  
+    padding: 0%;
 }
-
     .teclas button{
     align-items: center;
     width: 2.5rem;
@@ -407,4 +410,19 @@ button {
     
 
 }
+
+.Conjunto{
+display: flex;
+flex-direction: column;
+margin-left: 25rem;
+}
+
+.accounts-panel{
+    background-color: #8b8b8b;
+    display: flex;
+}
+
+    
+    
+  
 }
